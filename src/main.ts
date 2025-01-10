@@ -4,13 +4,15 @@ import { CircularModalComponent } from './app/components/circular-modal/circular
 import { NavbarComponent } from './app/components/navbar/navbar.component';
 import { HeroComponent } from './app/components/hero/hero.component';
 import { ModalService } from './app/services/modal.service';
+import { AdvantagesBannerComponent } from './app/components/advantages-banner/advantages-banner.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CircularModalComponent, NavbarComponent, HeroComponent],
+  imports: [CircularModalComponent, NavbarComponent, AdvantagesBannerComponent, HeroComponent],
   template: `
     <app-navbar></app-navbar>
+    <app-advantages-banner></app-advantages-banner>
     <app-hero></app-hero>
     <app-circular-modal></app-circular-modal>
   `
